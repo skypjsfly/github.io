@@ -25,6 +25,14 @@
         } else {
             ifr.scrolling = "yes" //安卓设备设置为yes
         }
+     
+     // 切换页面改变标题
+     document.addEventListener('visibilitychange', function() {
+      var isHidden = document.hidden;
+      if (isHidden) {
+       document.title = '你切你🐴呢';
+      }
+     });
     </script>
  </body>
  </html>
