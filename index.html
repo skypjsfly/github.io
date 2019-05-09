@@ -27,10 +27,13 @@
         }
      
      // 切换页面改变标题
+     var otitle = document.title
      document.addEventListener('visibilitychange', function() {
       var isHidden = document.hidden;
       if (isHidden) {
        document.title = '你切你🐴呢';
+      }else {
+       document.title = otitle;
       }
      });
     </script>
