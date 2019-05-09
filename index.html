@@ -18,5 +18,13 @@
  </head> 
  <body style="margin:0">
      <iframe id="scrollIframe" src="https://blog.pjs.ink:520" scrolling="yes"></iframe>
+    <script>
+        var ifr = $("#scrollIframe");
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) { //判断是苹果设备还是其他设备
+            iframe.attr("scrolling", "no")； //评估设置设置为no
+        } else {
+            iframe.attr("scrolling", "yes") //安卓设备设置为yes
+        }
+    </script>
  </body>
  </html>
